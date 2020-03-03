@@ -3,7 +3,12 @@ const qs = require("query-string");
 const router = require("express").Router();
 const passport = require("../../helpers/passport/passportConfig");
 
-const scope = ["user-read-private", "user-read-email"];
+const scope = [
+	"user-read-private",
+	"user-read-email",
+	"playlist-modify-public",
+	"playlist-modify-private"
+];
 
 const isAuthenticated = (req, res, next) => {
 	if (req.isAuthenticated) return next();
