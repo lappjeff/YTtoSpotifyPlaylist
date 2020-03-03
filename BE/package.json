@@ -1,0 +1,30 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "Backend for YT to Spotify project",
+	"main": "server.js",
+	"scripts": {
+		"test": "test",
+		"server": "nodemon src/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lappjeff/YTtoSpotifyPlaylist/tree/master"
+	},
+	"author": "Jeffrey M. Lapp",
+	"license": "MIT",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"connect-mongo": "^3.2.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-session": "^1.17.0",
+		"mongoose": "^5.9.3",
+		"nodemon": "^2.0.2",
+		"passport": "^0.4.1",
+		"passport-spotify": "^1.1.0",
+		"query-string": "^6.11.1",
+		"spotify-web-api-node": "^4.0.0"
+	}
+}
