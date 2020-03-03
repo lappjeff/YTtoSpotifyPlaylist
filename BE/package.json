@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for YT to Spotify project",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lappjeff/YTtoSpotifyPlaylist/tree/master"
+  },
+  "author": "Jeffrey M. Lapp",
+  "license": "MIT"
+}
