@@ -1,8 +1,14 @@
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
 const authRouter = require("./routes/auth/authRoutes");
+const passport = require("./helpers/passport/passportConfig");
 const app = express();
 
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(express.json());
+
+// ROUTES
 app.use("/api/auth", authRouter);
 
 const port = process.env.PORT || 5000;
