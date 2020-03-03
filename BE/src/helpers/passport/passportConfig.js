@@ -25,3 +25,5 @@ passport.use(
 		{ failureMessage: true, successMessage: true }
 	)
 );
+
+module.exports = passport;
