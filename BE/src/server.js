@@ -1,8 +1,16 @@
 require("dotenv").config();
 const express = require("express");
+const connectDB = require("./db/connectDB");
 const authRouter = require("./routes/auth/authRoutes");
+const sessionInstance = require("./helpers/sessionCreate");
 const passport = require("./helpers/passport/passportConfig");
+
 const app = express();
+
+// mongoDB initial connection
+connectDB();
+// Session connection with MongoDB database
+app.use(sessionInstance);
 
 app.use(passport.initialize());
 app.use(passport.session());
